@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "noImplicitAny": true,
+      "module": "esnext",
+      "target": "es5",
+      "jsx": "react-jsx",
+      "allowJs": true,
+      "moduleResolution": "node",
+      // lets me use export and imports for packages that uses common js
+      "esModuleInterop": true,
+      // for aliases
+      "baseUrl": ".",
+      // lets me use 
+      // import React from "react' istead of import * as React from 'react'
+      "allowSyntheticDefaultImports": true
+    },
+    // solves problem with import in modules
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS",
+        }
+    }
+  }
