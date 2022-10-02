@@ -54,6 +54,7 @@ export function buildLoaders ({ isDev }: BuildOptions): webpack.RuleSetRule[] {
         loader: 'file-loader'
       }
     ]
+
   }
 
   return [
