@@ -7,8 +7,6 @@ import { Navbar } from "widgets/Navbar";
 import { Sidebar } from "widgets/Sidebar";
 import { useTranslation } from "react-i18next";
 
-import cls from "widgets/Navbar/ui/Navbar/Navbar.scss";
-
 function MyComponent() {
   const { t, i18n } = useTranslation();
 
