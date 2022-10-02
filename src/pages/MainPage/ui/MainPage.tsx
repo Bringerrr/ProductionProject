@@ -1,11 +1,11 @@
-import React from 'react';
+import { FC } from 'react'
 
-const MainPage = () => {
-    return (
+const MainPage: FC = () => {
+  return (
         <div>
             MainPage
         </div>
-    );
-};
+  )
+}
 
-export default MainPage;
+export default MainPage

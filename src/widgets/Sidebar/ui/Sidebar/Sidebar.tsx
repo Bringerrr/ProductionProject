@@ -1,24 +1,24 @@
-import { useState } from "react";
-import { classNames } from "shared/lib/classNames/classNames";
-import cls from "./Sidebar.module.scss";
-import { ThemeSwitcher } from "shared/ui/ThemeSwitcher";
-import { LangSwitcher } from "widgets";
+import { FC, useState } from 'react'
+import { classNames } from 'shared/lib/classNames/classNames'
+import cls from './Sidebar.module.scss'
+import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher'
+import { LangSwitcher } from 'widgets'
 
 interface SidebarProps {
-  className?: string;
+  className?: string
 }
 
-export const Sidebar = ({ className }: SidebarProps) => {
-  const [collapsed, setCollapsed] = useState(false);
+export const Sidebar: FC<SidebarProps> = ({ className }) => {
+  const [collapsed, setCollapsed] = useState(false)
 
-  const onToggle = () => {
-    setCollapsed((prev) => !prev);
-  };
+  const onToggle = (): void => {
+    setCollapsed((prev) => !prev)
+  }
 
   return (
     <div
       className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [
-        className,
+        className
       ])}
     >
       <button onClick={onToggle}>toggle</button>
@@ -27,5 +27,5 @@ export const Sidebar = ({ className }: SidebarProps) => {
         <LangSwitcher />
       </div>
     </div>
-  );
-};
+  )
+}
