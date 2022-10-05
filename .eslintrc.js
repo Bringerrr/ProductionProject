@@ -22,6 +22,6 @@ module.exports = {
     '@typescript-eslint/strict-boolean-expressions': 0,
     '@typescript-eslint/no-misused-promises': 0,
     'i18next/no-literal-string': ['error', { markupOnly: true }],
-    'max-len': ['error', { ignoreComments: true, length: 120 }]
+    'max-len': 0
   }
 }

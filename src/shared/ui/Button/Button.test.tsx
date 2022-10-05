@@ -7,7 +7,6 @@ describe('classnames', () => {
     expect(screen.getByText('test')).toBeInTheDocument()
   })
 
-
   test('with 1st patam', () => {
     render(<Button theme={ThemeButton.CLEAR}>test</Button>)
     expect(screen.getByText('test')).toHaveClass('clear')

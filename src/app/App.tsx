@@ -9,9 +9,9 @@ import { Sidebar } from 'widgets/Sidebar'
 const App: FC = () => {
   const { theme } = useTheme()
 
-  useEffect(()=> {
-    throw Error('kek');
-  },[])
+  useEffect(() => {
+    throw Error('kek')
+  }, [])
 
   return (
     <div className={classNames('app', {}, [theme])}>
