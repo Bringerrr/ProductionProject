@@ -1,4 +1,4 @@
-import { FC, Suspense } from 'react'
+import { FC, Suspense, useEffect } from 'react'
 import './styles/index.scss'
 import { classNames } from 'shared/lib/classNames/classNames'
 import { useTheme } from 'app/providers/ThemeProvider'
@@ -8,6 +8,10 @@ import { Sidebar } from 'widgets/Sidebar'
 
 const App: FC = () => {
   const { theme } = useTheme()
+
+  useEffect(()=> {
+    throw Error('kek');
+  },[])
 
   return (
     <div className={classNames('app', {}, [theme])}>
